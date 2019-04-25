@@ -3,12 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
@@ -19,11 +14,11 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `grey`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          IRL.DEV
         </Link>
       </h1>
     </div>

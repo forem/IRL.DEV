@@ -5,9 +5,11 @@ import Layout from "../components/layout"
 
 const OrganizersPage = ({ data }) => (
   <Layout>
-    <h1>IRL.DEV Organizers</h1>
+    <h2>Get Involved!</h2>
     <p>There's nothing more awesome than meeting your internet friends IRL. </p>
-    <a href="https://airtable.com/shrU6z5n7xbM8s67Y">Yes, let's do this!</a>
+    <a href="https://airtable.com/shrU6z5n7xbM8s67Y" className="button">
+      Yes, let's do this!
+    </a>
     <h2>What to expect from DEV HQ</h2>
     <p>
       While we won't be there with you, we'll do our best to help your event be
@@ -57,17 +59,17 @@ const OrganizersPage = ({ data }) => (
           The Care and Feeding of your Conference Speakers
         </a>
       </li>
-      <h2>Are you ready to do this?!</h2>
-      <p>Awesome. Please fill out this form so we can get in touch with you:</p>
-      <iframe
-        className="airtable-embed"
-        src="https://airtable.com/embed/shrU6z5n7xbM8s67Y?backgroundColor=purple"
-        frameBorder="0"
-        width="100%"
-        height="533"
-        style={{ background: "transparent", border: "1px solid #ccc" }}
-      />
     </ul>
+    <h2>Are you ready to do this?!</h2>
+    <p>Awesome. Please fill out this form so we can get in touch with you:</p>
+    <iframe
+      className="airtable-embed"
+      src="https://airtable.com/embed/shrU6z5n7xbM8s67Y?backgroundColor=purple"
+      frameBorder="0"
+      width="100%"
+      height="533"
+      style={{ background: "transparent", border: "1px solid #ccc" }}
+    />
   </Layout>
 )
 export default OrganizersPage

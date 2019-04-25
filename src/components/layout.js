@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -25,7 +26,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
@@ -34,6 +34,9 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <Link to="/">
+            <h1>IRL.DEV</h1>
+          </Link>
           <main>{children}</main>
         </div>
       </>

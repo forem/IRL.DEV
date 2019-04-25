@@ -58,8 +58,8 @@ a {
 
 .button {
   display: block;
-  margin: 0 auto;
   width: 150px;
+  margin: 20px 0;
   background-color: hsl(237, 83%, 62%);
   padding: 10px;
   color: white;

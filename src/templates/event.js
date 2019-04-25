@@ -17,6 +17,9 @@ const Event = ({ data }) => {
         <a href={`https://maps.google.com/?q=${event.Venue}`}>{event.Venue}</a>
       </h4>
       <p className="meetup-description">{event.Description}</p>
+      <a href={event.Link} className="button">
+        RSVP
+      </a>
     </Layout>
   )
 }
@@ -30,6 +33,7 @@ export const query = graphql`
         id
         Title
         Description
+        Link
         Date
         City
         Name

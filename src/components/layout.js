@@ -32,7 +32,6 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      console.log(data)
       return (
         <div
           style={{

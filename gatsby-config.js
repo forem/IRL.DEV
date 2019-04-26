@@ -3,7 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `DEV Real Life Events`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `There's nothing more awesome than meeting your internet friends IRL.`,
     author: `@gatsbyjs`,
   },
   plugins: [

@@ -46,6 +46,7 @@ const Layout = ({ children }) => (
             <Img
               fixed={data.file.childImageSharp.fixed}
               alt="IRL.DEV"
+              fadeIn={false}
               style={{ display: "block", margin: "20px auto" }}
             />
           </Link>

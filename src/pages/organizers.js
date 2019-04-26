@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -69,6 +68,7 @@ const OrganizersPage = ({ data }) => (
       width="100%"
       height="533"
       id="airtable-form"
+      title="airtable form"
       style={{ background: "transparent", border: "1px solid #ccc" }}
     />
   </Layout>

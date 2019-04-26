@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
         }
         file(relativePath: { regex: "/logo/" }) {
           childImageSharp {
-            fixed(width: 400) {
+            fixed(width: 300) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 
 const Event = ({ data }) => {
@@ -18,7 +18,7 @@ const Event = ({ data }) => {
       </h4>
       <p className="meetup-description">{event.Description}</p>
       <a href={event.Link} className="button">
-        DETAILS/RSVP
+        DETAILS || RSVP
       </a>
     </Layout>
   )

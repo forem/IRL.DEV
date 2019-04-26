@@ -41,7 +41,7 @@ const OrganizersPage = ({ data }) => (
       Organizing an event takes lots of work. Things you'll want to consider
       include: venue, catering, sponsors, co-organizers, speakers, volunteers,
       timing, rsvp management, and more! Here are some great DEV posts from
-      other event organizers:{" "}
+      other event organizers:
     </p>
     <ul>
       <li>

@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -22,10 +22,18 @@ const Layout = ({ children }) => (
             title
           }
         }
+        file(relativePath: { regex: "/logo/" }) {
+          childImageSharp {
+            fixed(width: 400) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `}
-    render={data => (
-      <>
+    render={data => {
+      console.log(data)
+      return (
         <div
           style={{
             margin: `0 auto`,
@@ -35,12 +43,16 @@ const Layout = ({ children }) => (
           }}
         >
           <Link to="/">
-            <h1>IRL.DEV</h1>
+            <Img
+              fixed={data.file.childImageSharp.fixed}
+              alt="IRL.DEV"
+              style={{ display: "block", margin: "20px auto" }}
+            />
           </Link>
           <main>{children}</main>
         </div>
-      </>
-    )}
+      )
+    }}
   />
 )
 

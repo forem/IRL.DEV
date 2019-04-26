@@ -82,3 +82,9 @@ a {
 .venue {
   color: hsl(237, 83%, 62%);
 }
+
+.gatsby-image-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}

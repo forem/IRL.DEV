@@ -7,7 +7,7 @@ const OrganizersPage = ({ data }) => (
   <Layout>
     <h2>Get Involved!</h2>
     <p>There's nothing more awesome than meeting your internet friends IRL. </p>
-    <a href="https://airtable.com/shrU6z5n7xbM8s67Y" className="button">
+    <a href="#airtable-form" className="button">
       Yes, let's do this!
     </a>
     <h2>What to expect from DEV HQ</h2>
@@ -68,6 +68,7 @@ const OrganizersPage = ({ data }) => (
       frameBorder="0"
       width="100%"
       height="533"
+      id="airtable-form"
       style={{ background: "transparent", border: "1px solid #ccc" }}
     />
   </Layout>

@@ -18,7 +18,7 @@ const Event = ({ data }) => {
       </h4>
       <p className="meetup-description">{event.Description}</p>
       <a href={event.Link} className="button">
-        RSVP
+        DETAILS/RSVP
       </a>
     </Layout>
   )

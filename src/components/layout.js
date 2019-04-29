@@ -60,7 +60,7 @@ const Layout = ({ children }) => (
                   zIndex: 2,
                   top: "50%",
                   left: "50%",
-                  width: "600px",
+                  width: "300px",
                   transform: "translate(-50%, -50%)",
                   textShadow: "2px 2px 4px #fff",
                   opacity: 1,
@@ -71,7 +71,7 @@ const Layout = ({ children }) => (
           <Img
             fluid={data.croudimage.childImageSharp.fluid}
             alt="Crowd at DEV + GA meetup"
-            style={{ width: "100vw", height: "200px" }}
+            style={{ width: "100vw", height: "400px" }}
           />
 
           <div

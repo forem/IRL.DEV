@@ -22,10 +22,17 @@ const Layout = ({ children }) => (
             title
           }
         }
-        file(relativePath: { regex: "/logo/" }) {
+        logoimage: file(relativePath: { regex: "/logo/" }) {
           childImageSharp {
-            fixed(width: 300) {
+            fixed(width: 700) {
               ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        croudimage: file(relativePath: { regex: "/croud/" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -33,24 +40,51 @@ const Layout = ({ children }) => (
     `}
     render={data => {
       return (
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <Link to="/">
-            <Img
-              fixed={data.file.childImageSharp.fixed}
-              alt="IRL.DEV"
-              fadeIn={false}
-              style={{ display: "block", margin: "20px auto" }}
-            />
-          </Link>
-          <main>{children}</main>
-        </div>
+        <>
+          <div
+            style={{
+              height: "400px",
+              width: "100vw",
+              position: "absolute",
+              backgroundColor: "rgba(220, 236, 242, .7)",
+              zIndex: 1,
+            }}
+          >
+            <Link to="/">
+              <Img
+                fixed={data.logoimage.childImageSharp.fixed}
+                alt="IRL.DEV"
+                fadeIn={false}
+                style={{
+                  position: "absolute",
+                  zIndex: 2,
+                  top: "50%",
+                  left: "50%",
+                  width: "600px",
+                  transform: "translate(-50%, -50%)",
+                  textShadow: "2px 2px 4px #fff",
+                  opacity: 1,
+                }}
+              />
+            </Link>
+          </div>
+          <Img
+            fluid={data.croudimage.childImageSharp.fluid}
+            alt="Crowd at DEV + GA meetup"
+            style={{ width: "100vw", height: "400px" }}
+          />
+
+          <div
+            style={{
+              margin: `0 auto`,
+              maxWidth: 800,
+              padding: `0px 1.0875rem 1.45rem`,
+              paddingTop: 0,
+            }}
+          >
+            <main>{children}</main>
+          </div>
+        </>
       )
     }}
   />

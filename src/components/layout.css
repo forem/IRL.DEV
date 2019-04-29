@@ -13,6 +13,7 @@ body {
   background-color: #f1f3fe;
   font-family: "PT Sans", sans-serif;
   color: hsl(209, 61%, 16%);
+  margin: 0;
 }
 
 h1 {
@@ -23,17 +24,17 @@ h1 {
 h3 {
   font-size: 32px;
   margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 h4 {
   color: hsl(210, 22%, 49%);
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: 2px;
 }
 
 p,
 li {
-  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -44,7 +45,7 @@ a {
 
 .event {
   background-color: white;
-  padding: 10px 20px;
+  padding: 12px 15px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   height: 180px;

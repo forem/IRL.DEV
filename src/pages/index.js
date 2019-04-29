@@ -24,22 +24,22 @@ const IndexPage = ({ data }) => {
         There's nothing more awesome than meeting your internet friends, IRL.
       </p>
       <p>
-        All events listed, unless stated otherwise, are organized by local
-        community members on a volunteer basis. Our organizers are awesome (and
-        if you want to become one, <Link to="/organizers">click here</Link>).
-      </p>
-      <p>
         Have feedback for an event, or just want to share something with us?
         Email <a href="mailto:yo@dev.to">yo@dev.to</a> — we want to know about
         your experience!
       </p>
+      <p>
+        All events listed, unless stated otherwise, are organized by local
+        community members on a volunteer basis. Our organizers are awesome (and
+        if you want to become one, <Link to="/organizers">click here</Link>).
+      </p>
       <h2>Upcoming Events</h2>
       {futureEvents.map(event => (
-        <Event event={event} />
+        <Event event={event} key={event.id} />
       ))}
       <h2>Past Events</h2>
       {pastEvents.map(event => (
-        <Event event={event} />
+        <Event event={event} key={event.id} />
       ))}
     </Layout>
   )

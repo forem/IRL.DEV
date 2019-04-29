@@ -71,7 +71,7 @@ const Layout = ({ children }) => (
           <Img
             fluid={data.croudimage.childImageSharp.fluid}
             alt="Crowd at DEV + GA meetup"
-            style={{ width: "100vw", height: "400px" }}
+            style={{ width: "100vw", height: "200px" }}
           />
 
           <div

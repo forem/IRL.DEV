@@ -52,4 +52,7 @@ Now you're ready to start developing!
 gatsby develop
 ```
 
+## Notes
 
+- In order to see new events on the site, moderators have to check off the `approved` box in the Airtable base.
+- In order to deploy new events, the site needs to be re-deployed. You can do this manually on Netlify or through pushing a code change.

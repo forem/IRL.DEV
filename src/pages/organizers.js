@@ -28,8 +28,9 @@ const OrganizersPage = ({ data }) => (
     <h2>What we expect from you</h2>
     <p>
       This is your event! But in order for us to support you, we're trusting
-      that you'll uphold our code of conduct and provide an inclusive experience
-      for all attendees. And that's basically it!
+      that you'll uphold our{" "}
+      <a href="https://dev.to/code-of-conduct">code of conduct</a> and provide
+      an inclusive experience for all attendees. And that's basically it!
     </p>
     <p>
       You're free to organize anything from happy hours (consider non-alcoholic

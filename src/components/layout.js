@@ -86,6 +86,7 @@ const Layout = ({ children }) => (
             <footer>
               <a href="http://dev.to">DEV</a>
               <a href="https://dev.to/code-of-conduct">Code of Conduct</a>
+              <a href="/organizers">Become an Organizer</a>
             </footer>
           </div>
         </>

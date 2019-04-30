@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -30,17 +30,20 @@ const IndexPage = ({ data }) => {
       </p>
       <p>
         All events listed, unless stated otherwise, are organized by local
-        community members on a volunteer basis. Our organizers are awesome (and
-        if you want to become one, <Link to="/organizers">click here</Link>).
+        community members on a volunteer basis. Our organizers are awesome!
       </p>
-      <h2>Upcoming Events</h2>
+      <Link to="/organizers" className="button centered">
+        Become an Organizer
+      </Link>{" "}
+      <h2>Stay tuned for our first event!</h2>
+      {/* <h2>Upcoming Events</h2>
       {futureEvents.map(event => (
         <Event event={event} key={event.id} />
       ))}
       <h2>Past Events</h2>
       {pastEvents.map(event => (
         <Event event={event} key={event.id} />
-      ))}
+      ))} */}
     </Layout>
   )
 }

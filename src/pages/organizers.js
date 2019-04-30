@@ -22,7 +22,7 @@ const OrganizersPage = ({ data }) => (
       </li>
       <li>
         We'll list your event on IRL.DEV, share it in our weekly newsletter, and
-        signal boost through our social accounts.{" "}
+        signal boost through our social accounts.
       </li>
     </ul>
     <h2>What we expect from you</h2>

@@ -3,6 +3,12 @@
 </h1>
 There's nothing more awesome than meeting your internet friends, IRL.
 
+## About the Project
+
+IRL.DEV is a site that features real-life events from volunteer members of the [DEV Community](https://dev.to).
+
+It is built with [Gatsby](https://www.gatsbyjs.org/) and [Airtable](https://airtable.com/).
+
 ## Installation
 
 Install Gatsby

@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
         }
         logoimage: file(relativePath: { regex: "/logo/" }) {
           childImageSharp {
-            fixed(width: 300) {
+            fixed(width: 400) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -60,7 +60,7 @@ const Layout = ({ children }) => (
                   zIndex: 2,
                   top: "50%",
                   left: "50%",
-                  width: "300px",
+                  width: "400px",
                   transform: "translate(-50%, -50%)",
                   textShadow: "2px 2px 4px #fff",
                   opacity: 1,

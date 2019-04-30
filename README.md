@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/thepracticaldev/IRL.DEV/master/src/img/logo.png">
+  <img src="https://raw.githubusercontent.com/thepracticaldev/IRL.DEV/master/src/img/logo.png?token=ADC6NPUAW44KJOMW6ILAJDC42HJ4Y">
 </h1>
 There's nothing more awesome than meeting your internet friends, IRL.
 

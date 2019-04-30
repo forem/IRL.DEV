@@ -43,6 +43,15 @@ a {
   color: hsl(237, 83%, 62%);
 }
 
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  margin: 10px;
+}
+
 .event {
   background-color: white;
   padding: 12px 15px;

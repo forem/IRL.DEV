@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
     render={data => {
       return (
         <>
-          <div
+          <header
             style={{
               height: "400px",
               width: "100vw",
@@ -67,7 +67,7 @@ const Layout = ({ children }) => (
                 }}
               />
             </Link>
-          </div>
+          </header>
           <Img
             fluid={data.croudimage.childImageSharp.fluid}
             alt="Crowd at DEV + GA meetup"
@@ -83,6 +83,10 @@ const Layout = ({ children }) => (
             }}
           >
             <main>{children}</main>
+            <footer>
+              <a href="http://dev.to">DEV</a>
+              <a href="https://dev.to/code-of-conduct">Code of Conduct</a>
+            </footer>
           </div>
         </>
       )

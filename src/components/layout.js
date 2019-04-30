@@ -46,7 +46,7 @@ const Layout = ({ children }) => (
               height: "400px",
               width: "100vw",
               position: "absolute",
-              backgroundColor: "rgba(220, 236, 242, .7)",
+              backgroundColor: "rgba(241, 243, 254, .7)",
               zIndex: 1,
             }}
           >

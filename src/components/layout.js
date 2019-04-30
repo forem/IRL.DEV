@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
@@ -63,7 +56,6 @@ const Layout = ({ children }) => (
                   width: "400px",
                   transform: "translate(-50%, -50%)",
                   textShadow: "2px 2px 4px #fff",
-                  opacity: 1,
                 }}
               />
             </Link>

@@ -23,7 +23,7 @@ module.exports = {
         apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: `appbwbqpZdWrUpaL9`,
+            baseId: process.env.GATSBY_AIRTABLE_BASE,
             tableName: `events`,
             tableView: `approved-events`,
           },

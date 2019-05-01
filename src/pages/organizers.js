@@ -61,7 +61,6 @@ const OrganizersPage = ({ data }) => (
       </li>
     </ul>
     <h2>Are you ready to do this?!</h2>
-    <p>Awesome. Please fill out this form so we can get in touch with you:</p>
     <iframe
       className="airtable-embed"
       src="https://airtable.com/embed/shrU6z5n7xbM8s67Y?backgroundColor=purple"

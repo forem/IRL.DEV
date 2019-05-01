@@ -6,22 +6,22 @@ import SEO from "../components/seo"
 import Event from "../components/event"
 
 const EventList = ({ futureEvents, pastEvents }) => {
-  if (futureEvents || pastEvents) {
-    return (
-      <>
-        <h2>Upcoming Events</h2>
-        {futureEvents.map(event => (
-          <Event event={event} key={event.id} />
-        ))}
-        <h2>Past Events</h2>
-        {pastEvents.map(event => (
-          <Event event={event} key={event.id} />
-        ))}
-      </>
-    )
-  } else {
-    return <h2>Stay tuned for our first event!</h2>
-  }
+  // if (futureEvents || pastEvents) {
+  //   return (
+  //     <>
+  //       <h2>Upcoming Events</h2>
+  //       {futureEvents.map(event => (
+  //         <Event event={event} key={event.id} />
+  //       ))}
+  //       <h2>Past Events</h2>
+  //       {pastEvents.map(event => (
+  //         <Event event={event} key={event.id} />
+  //       ))}
+  //     </>
+  //   )
+  // } else {
+  return <h2>Stay tuned for our first event!</h2>
+  // }
 }
 
 const IndexPage = ({ data }) => {

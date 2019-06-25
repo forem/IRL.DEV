@@ -24,17 +24,23 @@ const OrganizersPage = ({ data }) => (
         We'll list your event on IRL.DEV, share it in our weekly newsletter, and
         signal boost through our social accounts.
       </li>
+      <li>
+        We will provide you with a DEV Connect chat channel to be in touch with DEV Staff as well as other organizers.
+      </li>
     </ul>
     <h2>What we expect from you</h2>
     <p>
       This is your event! But in order for us to support you, we're trusting
       that you'll uphold our{" "}
       <a href="https://dev.to/code-of-conduct">code of conduct</a> and provide
-      an inclusive experience for all attendees. And that's basically it!
+      an inclusive experience for all attendees.
+    </p>
+    <p>
+      You should keep your attendees informed the schedule for future events. We will expect a recap of your first few events so we can help improve things, but will mostly leave this up to you.
     </p>
     <p>
       You're free to organize anything from happy hours (consider non-alcoholic
-      drinks as an option though!) to hackathons to everything in-between.
+      drinks as an option though!) to hackathons to everything in-between. If your event includes speakers, make sure to give speakers a time limit!
     </p>
     <h2>Words of Wisdom</h2>
     <p>

@@ -15,14 +15,14 @@ const Layout = ({ children }) => (
             title
           }
         }
-        logoimage: file(relativePath: { regex: "/logo/" }) {
+        logoimage: file(relativePath: { regex: "/dev-irl/" }) {
           childImageSharp {
             fixed(width: 400) {
               ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
-        croudimage: file(relativePath: { regex: "/croud/" }) {
+        croudimage: file(relativePath: { regex: "/sticker-background/" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
               height: "400px",
               width: "100vw",
               position: "absolute",
-              backgroundColor: "rgba(241, 243, 254, .7)",
+              backgroundColor: "rgba(241, 243, 254, .3)",
               zIndex: 1,
             }}
           >
@@ -53,7 +53,8 @@ const Layout = ({ children }) => (
                   zIndex: 2,
                   top: "50%",
                   left: "50%",
-                  width: "400px",
+                  width: "260px",
+                  height: "260px",
                   transform: "translate(-50%, -50%)",
                   textShadow: "2px 2px 4px #fff",
                 }}

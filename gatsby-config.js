@@ -6,7 +6,7 @@ module.exports = {
     description: `There's nothing more awesome than meeting your internet friends IRL.`,
     author: `@thePracticalDev`,
     siteName: `IRL.DEV`,
-    socialImage: `src/img/dev-irl-social.png`,
+    socialImage: `https://thepracticaldev.s3.amazonaws.com/i/gvx1ze2tc7e3z912wdav.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

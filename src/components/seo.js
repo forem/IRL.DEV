@@ -19,6 +19,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            socialImage
+            siteName
           }
         }
       }
@@ -26,6 +28,7 @@ function SEO({ description, lang, meta, keywords, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const socialImage = site.siteMetadata.socialImage
 
   return (
     <Helmet
@@ -33,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} — %s`}
       meta={[
         {
           name: `description`,
@@ -48,12 +51,24 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: metaDescription,
+        },
+        {
+          property: `og:site_name`,
+          content: site.siteMetadata.siteName,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image:src`,
+          content: socialImage,
         },
         {
           name: `twitter:creator`,
@@ -86,6 +101,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
+  siteName: `IRL.DEV`,
 }
 
 SEO.propTypes = {
@@ -94,6 +110,8 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  socialImage: PropTypes.string.isRequired,
+  siteName: PropTypes.string.isRequired,
 }
 
 export default SEO

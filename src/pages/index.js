@@ -20,7 +20,7 @@ const EventList = ({ futureEvents, pastEvents }) => {
   //     </>
   //   )
   // } else {
-  return <h2>Stay tuned for our first event!</h2>
+  return <h2>Check back here in the future for a list of events</h2>
   // }
 }
 
@@ -39,22 +39,21 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`dev`, `events`, `thepracticaldev`]} />
-      <p className="bolded">
-        There's nothing more awesome than meeting your internet friends, IRL.
-      </p>
-      <p>
-        Have feedback for an event, or just want to share something with us?
-        Email <a href="mailto:yo@dev.to">yo@dev.to</a> — we want to know about
-        your experience!
-      </p>
-      <p>
-        All events listed, unless stated otherwise, are organized by local
-        community members on a volunteer basis. Our organizers are awesome!
-      </p>
-      <Link to="/organizers" className="button centered">
-        Become an Organizer
-      </Link>
-      <EventList futureEvents={futureEvents} pastEvents={pastEvents} />
+      <div style={{textAlign: "center"}}>
+        <p className="bolded">
+          There's nothing better than meeting your internet friends, IRL.
+        </p>
+        <p  style={{fontSize: "1.1em"}}>
+          <em>We are looking for organizers to help the community get together!</em>
+        </p>
+        <p>
+          If you would like to help bridge the online-offline gap, apply to run a DEV meetup.
+        </p>
+        <Link to="/organizers" className="button centered">
+          Become an Organizer
+        </Link>
+        <EventList futureEvents={futureEvents} pastEvents={pastEvents} />
+      </div>
     </Layout>
   )
 }

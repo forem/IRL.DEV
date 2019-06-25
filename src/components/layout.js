@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
         <>
           <header
             style={{
-              height: "400px",
+              height: "390px",
               width: "100vw",
               position: "absolute",
               backgroundColor: "rgba(241, 243, 254, .3)",
@@ -51,10 +51,10 @@ const Layout = ({ children }) => (
                 style={{
                   position: "absolute",
                   zIndex: 2,
-                  top: "50%",
+                  top: "49%",
                   left: "50%",
-                  width: "260px",
-                  height: "260px",
+                  width: "250px",
+                  height: "250px",
                   transform: "translate(-50%, -50%)",
                   textShadow: "2px 2px 4px #fff",
                 }}
@@ -64,7 +64,7 @@ const Layout = ({ children }) => (
           <Img
             fluid={data.croudimage.childImageSharp.fluid}
             alt="Crowd at DEV + GA meetup"
-            style={{ width: "100vw", height: "400px" }}
+            style={{ width: "100vw", height: "380px" }}
           />
 
           <div

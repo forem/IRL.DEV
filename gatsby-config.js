@@ -4,7 +4,9 @@ module.exports = {
   siteMetadata: {
     title: `DEV Real Life Events`,
     description: `There's nothing more awesome than meeting your internet friends IRL.`,
-    author: `@gatsbyjs`,
+    author: `@thePracticalDev`,
+    siteName: `IRL.DEV`,
+    socialImage: `${__dirname}/src/img/dev-irl-social.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

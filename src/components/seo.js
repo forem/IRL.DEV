@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: metaDescription,
+          content: socialImage,
         },
         {
           property: `og:site_name`,

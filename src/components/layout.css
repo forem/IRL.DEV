@@ -66,14 +66,14 @@ footer a {
 
 .button {
   display: block;
-  width: 220px;
+  width: 310px;
   margin: 50px auto !important;
   background-color: hsl(237, 83%, 62%);
   padding: 10px;
   color: white;
   border-radius: 4px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-weight: bold;
   display: block;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

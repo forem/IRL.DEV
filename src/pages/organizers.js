@@ -46,7 +46,15 @@ const OrganizersPage = ({ data }) => (
     <p>
       Organizing an event takes lots of work. Things you'll want to consider
       include: venue, catering, sponsors, co-organizers, speakers, volunteers,
-      timing, rsvp management, and more! Here are some great DEV posts from
+      timing, rsvp management, and more!
+    </p>
+    <p>
+      Your own company may host and sponsor events and are welcome to give address attendees during the event.
+      We are okay with any sponsorships as long as it is tastefully done.
+      Just keep us in the loop so we can learn what works and what does not.
+    </p>
+    <p>
+      Here are some great DEV posts from
       other event organizers:
     </p>
     <ul>

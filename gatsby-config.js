@@ -1,4 +1,5 @@
 require("dotenv").config()
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
@@ -30,6 +31,13 @@ module.exports = {
             tableView: `approved-events`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        defaultLayouts: { default: path.resolve("./src/components/layout.js") },
       },
     },
   ],

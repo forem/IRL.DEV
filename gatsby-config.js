@@ -1,4 +1,5 @@
 require("dotenv").config()
+const path = require(`path`)
 
 const siteMetadata = {
   title: `DEV Real Life Events`,

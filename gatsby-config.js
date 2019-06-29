@@ -71,7 +71,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,

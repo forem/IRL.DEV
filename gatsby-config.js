@@ -1,13 +1,15 @@
 require("dotenv").config()
 
+const siteMetadata = {
+  title: `DEV Real Life Events`,
+  description: `There's nothing more awesome than meeting your internet friends IRL.`,
+  author: `@thePracticalDev`,
+  siteName: `IRL.DEV`,
+  socialImage: `https://thepracticaldev.s3.amazonaws.com/i/gvx1ze2tc7e3z912wdav.png`,
+}
+
 module.exports = {
-  siteMetadata: {
-    title: `DEV Real Life Events`,
-    description: `There's nothing more awesome than meeting your internet friends IRL.`,
-    author: `@thePracticalDev`,
-    siteName: `IRL.DEV`,
-    socialImage: `https://thepracticaldev.s3.amazonaws.com/i/gvx1ze2tc7e3z912wdav.png`,
-  },
+  siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

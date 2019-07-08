@@ -1,13 +1,20 @@
 require("dotenv").config()
 
+const siteMetadata = {
+  title: `DEV Real Life Events`,
+  description: `There's nothing more awesome than meeting your internet friends IRL.`,
+  author: `@thePracticalDev`,
+  authorUrl: `https://dev.to`,
+  siteName: `IRL.DEV`,
+  socialImage: `https://thepracticaldev.s3.amazonaws.com/i/gvx1ze2tc7e3z912wdav.png`,
+  faviconPng: `./src/img/dev-irl.png`,
+  siteLanguage: `en-US`,
+  background: `#bcbcbc`,
+  themeColor: `#073449`,
+}
+
 module.exports = {
-  siteMetadata: {
-    title: `DEV Real Life Events`,
-    description: `There's nothing more awesome than meeting your internet friends IRL.`,
-    author: `@thePracticalDev`,
-    siteName: `IRL.DEV`,
-    socialImage: `https://thepracticaldev.s3.amazonaws.com/i/gvx1ze2tc7e3z912wdav.png`,
-  },
+  siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -30,6 +37,52 @@ module.exports = {
             tableView: `approved-events`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: siteMetadata.faviconPng,
+        // WebApp Manifest Configuration
+        appName: siteMetadata.title,
+        appDescription: siteMetadata.description,
+        developerName: siteMetadata.author,
+        developerURL: siteMetadata.authorUrl,
+        dir: `auto`,
+        lang: siteMetadata.siteLanguage,
+        background: siteMetadata.background,
+        theme_color: siteMetadata.themeColor,
+        display: `standalone`,
+        orientation: `any`,
+        start_url: `/?homescreen=1`,
+        version: `1.0`,
+
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: siteMetadata.title,
+        short_name: siteMetadata.title,
+        start_url: `/`,
+        background_color: siteMetadata.background,
+        theme_color: siteMetadata.themeColor,
+        display: `minimal-ui`,
+        // This path is relative to the root of the site.
+        icon: siteMetadata.faviconPng,
       },
     },
   ],

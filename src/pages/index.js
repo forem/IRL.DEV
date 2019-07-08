@@ -6,22 +6,22 @@ import SEO from "../components/seo"
 import Event from "../components/event"
 
 const EventList = ({ futureEvents, pastEvents }) => {
-  // if (futureEvents || pastEvents) {
-  //   return (
-  //     <>
-  //       <h2>Upcoming Events</h2>
-  //       {futureEvents.map(event => (
-  //         <Event event={event} key={event.id} />
-  //       ))}
-  //       <h2>Past Events</h2>
-  //       {pastEvents.map(event => (
-  //         <Event event={event} key={event.id} />
-  //       ))}
-  //     </>
-  //   )
-  // } else {
-  return <h2>Check back here in the future for a list of events</h2>
-  // }
+  if (futureEvents || pastEvents) {
+    return (
+      <>
+        <h2>Upcoming Events</h2>
+        {futureEvents.map(event => (
+          <Event event={event} key={event.id} />
+        ))}
+        <h2>Past Events</h2>
+        {pastEvents.map(event => (
+          <Event event={event} key={event.id} />
+        ))}
+      </>
+    )
+  } else {
+    return <h2>Check back here in the future for a list of events</h2>
+  }
 }
 
 const IndexPage = ({ data }) => {
@@ -39,15 +39,18 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`dev`, `events`, `thepracticaldev`]} />
-      <div style={{textAlign: "center"}}>
+      <div style={{ textAlign: "center" }}>
         <p className="bolded">
           There's nothing better than meeting your internet friends, IRL.
         </p>
-        <p  style={{fontSize: "1.1em"}}>
-          <em>We are looking for organizers to help the community get together!</em>
+        <p style={{ fontSize: "1.1em" }}>
+          <em>
+            We are looking for organizers to help the community get together!
+          </em>
         </p>
         <p>
-          If you would like to help bridge the online-offline gap, apply to run a DEV meetup.
+          If you would like to help bridge the online-offline gap, apply to run
+          a DEV meetup.
         </p>
         <Link to="/organizers" className="button centered">
           Become an Organizer

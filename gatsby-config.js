@@ -86,5 +86,12 @@ module.exports = {
         icon: siteMetadata.faviconPng,
       },
     },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        defaultLayouts: { default: path.resolve("./src/components/layout.js") },
+      },
+    },
   ],
 }

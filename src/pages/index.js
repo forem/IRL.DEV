@@ -1,9 +1,8 @@
+import { graphql, Link } from "gatsby"
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import Event from "../components/event"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Event from "../components/event"
 
 const EventList = ({ futureEvents, pastEvents }) => {
   return (
@@ -61,7 +60,7 @@ export default IndexPage
 
 export const query = graphql`
   {
-    allAirtable {
+    allAirtable(sort: { fields: data___Date, order: ASC }) {
       edges {
         node {
           data {
